@@ -43,6 +43,7 @@ function pauseMusic(){
 
 //prev music function
 function prevMusic(){
+  musicIndex--;
   musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
   loadMusic(musicIndex);
   playMusic();
